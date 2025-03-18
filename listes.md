@@ -369,10 +369,11 @@ def intersection(l1,l2):
         if e in l2 and e not in l3:
             l3.append(e)
     return l3
-```
 l1=[2,4,5,2,7,6]
 l2=[5,8,2,3,2]
 print("A inter B ", intersection(l1,l2))
+```
+
 <div id="pad_4.2" class="pad"></div>
 <script>
     Pythonpad('pad_4.2', 
