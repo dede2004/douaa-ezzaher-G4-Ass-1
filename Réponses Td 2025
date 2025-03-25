@@ -4,3 +4,17 @@ def verifie(L):
     if L[i] > L[i+1]:
       return False
   return True
+
+
+# verifier des dates
+from datetime import datetime
+def verifie_date(L):
+  for i in range(len(L)-1):
+    # Convert the date string to a datetime object
+    # Assuming the date format is MM-DD-YYYY
+    date_object1 = datetime.strptime(L[i], "%m-%d-%Y").date()
+    date_object2 = datetime.strptime(L[i+1], "%m-%d-%Y").date()
+    if date_object1 > date_object2:
+      return False
+    else:
+      return True
