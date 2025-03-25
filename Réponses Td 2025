@@ -18,3 +18,14 @@ def verifie_date(L):
       return False
     else:
       return True
+
+#Ex2
+Urne = ['A', 'A', 'A', 'B', 'C', 'B', 'C', 'B', 'C', 'B']
+print(Urne.count('A'))
+def depuille(L):
+  d=dict()
+  for e in L:
+    if e not in d:
+      d[e]=Urne.count(e)
+  return d
+depuille(Urne)
